@@ -1,0 +1,474 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+}
+body{
+  height: 852025px;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  border: solid 2px red;
+  height: 6rem;
+  flex-wrap: wrap;
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+  background-color: white;
+}
+header a{
+  text-decoration: none;
+}
+header .header-left{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+header .header-left h2{
+  font-size: 25px;
+  font-style: italic;
+  cursor: pointer;
+  color: black;
+}
+header .header-left h2 span{
+  color: red;
+}
+header .header-left ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  column-gap: 20%;
+}
+header .header-left ul li a{
+  cursor: pointer;
+  color: green;
+  font-size: 15px;
+  font-weight: bold;
+}
+header .header-left ul li a:hover{
+  color: red;
+}
+
+header .header-right{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .header-right ul{
+  display: flex;
+  list-style: none;
+  column-gap: 8rem;
+  margin-right: 2rem;
+}
+
+header .header-right ul li a{
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+}
+header .header-right ul li a:hover{
+  color: green;
+}
+
+header .header-right button{
+  height: 3rem;
+  border-radius: 7px;
+  padding: 0 12px;
+  border: none;
+  cursor: pointer;
+  transition: ease 1s ;
+  color: green;
+  background-color: white;
+  border: 1px solid green;
+}
+
+header .header-right button:hover{
+  color: white;
+  background-color: green;
+}
+@media screen and (max-width: 37.5em) {
+  header{
+    flex-direction: row;
+    row-gap: 2rem;
+    height: 12rem;
+  }
+  header .header-left{
+    width: 100%;
+  }
+  header .header-left h2{
+    font-size: 15px;
+  }
+  header .header-left ul{
+    column-gap: 10%;
+  }
+  header .header-left ul li a{
+    font-size: 10px;
+  }
+
+  header .header-right{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  header .header-right ul li a{
+    font-size: 12px;
+  }
+  header .header-right button{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 912px) {
+  header{
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.hero {
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./assets/hero.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+}
+.hero span{
+  color: red;
+}
+.hero .title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero .title h1{
+  font-size: 60px;
+  font-family: "Dancing Script", cursive;
+  font-style: italic;
+  font-weight: 1000;
+}
+.hero .title h3{
+  font-size: 25px;
+}
+.hero .buttons{
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  margin-top: 3rem;
+}
+.hero .buttons .starthome{
+  color: white;
+  background-color: black;
+}
+.hero .buttons .live{
+  color:rgb(19, 18, 18);
+  background-color: red;
+}
+.hero .buttons .live,
+.hero .buttons .starthome{
+  text-decoration: none;
+  width: 20rem;
+  height: 40px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.hero .buttons .starthome:hover{
+  color: white;
+  background-color: red;
+}
+.hero .buttons .live:hover{
+  color: red;
+  background-color: black;
+}
+@media screen and (max-width: 37.5em) {
+  .hero {
+    height: 50vh;
+  }
+  .hero .title h1{
+    font-size: 30px;
+  }
+  .hero .title h3{
+    font-size: 15px;
+  }
+  .hero .buttons{
+    gap: 2rem;
+  }
+  .hero .buttons .live,
+  .hero .buttons .starthome{
+  width: 15rem;
+}
+}
+@media screen and (max-width: 912px) {
+  .hero{
+    margin-top: 13rem;
+  }
+}
+
+/*About*/
+.about{
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about .aboutTitle{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-content: center;
+  align-items: center;
+
+}
+.about .aboutTitle h3{
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 1000;
+  font-family: "Dancing Script", cursive;
+}
+.about span{
+  color: green;
+}
+.about .aboutTitle h3,
+.about .aboutTitle p{
+  margin-bottom: 3rem;
+}
+.about .aboutTitle p{
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 700;
+  font-family: "Dancing Script", cursive;
+  line-height: 3rem;
+}
+.about .aboutTitle a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 20rem;
+  border-radius: 7px;
+  padding: 0 12px;
+  cursor: pointer;
+  color: green;
+  background-color: white;
+  border: 1px solid green;
+  font-size: 15px;
+}
+.about .aboutImage img{
+  width: 50rem;
+  border-radius: 7px;
+}
+@media screen and (max-width: 37.5em) {
+  .about{
+    height: 90vh;
+    background-color: yellow;
+  }
+  .about .aboutTitle h3{
+    font-size: 1rem;
+  }
+  .about .aboutTitle p{
+    font-size: 12px;
+    line-height: 2rem;
+  }
+}
+@media screen and (max-width: 912px) {
+  .about{
+    height: 65vh;
+    background-color: aqua;
+  }
+  .about .aboutTitle h3{
+    font-size: 35px;
+    margin-bottom: 2rem;
+  }
+  .about .aboutTitle a,
+  .about .aboutTitle p{
+    margin-bottom: 2rem;
+  }
+  .about .aboutImage img{
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+.spaces{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  /* background-color: green; */
+  gap: 2rem;
+}
+.spaces .room{
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 0 2rem;
+  height: 50vh;
+  width: 46%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  /* flex-wrap: wrap; */
+}
+.spaces .room .roomimage{
+  width: 100%;
+}
+.spaces .room .roomimage h1{
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 1.2rem;
+}
+.spaces .room .roomimage img{
+  width: 35rem;
+  border-radius: 10px;
+  box-shadow: 0px 20px 40px 0 rgba(10, 10, 10, 0.7);
+}
+.spaces .room .roomInfo{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.spaces .room .roomInfo h3{
+  text-align: center;
+  color: rgb(37, 37, 37);
+  font-size: 15px;
+  line-height: 1.7rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.spaces .room .roomInfo h1{
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.spaces .room .roomInfo a{
+  color: white;
+  background-color: red;
+  text-decoration: none;
+  width: 20rem;
+  height: 40px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-top: 3rem;
+}
+.spaces .room .roomInfo a:hover{
+  color: red;
+  background-color: white;
+  border: 2px solid red;
+}
+#advice{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+}
+#advice h1{
+  font-size: 25px;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+#advice ul li{
+  font-size: 15px;
+  line-height: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+@media screen and (max-width: 599px) {
+  .spaces{
+    flex-direction: column;
+    margin-top: 20%;
+  }
+  .spaces .room{
+    flex-direction: column;
+    height: 55vh;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .spaces .room .roomimage{
+    margin-bottom: 3rem;
+    box-sizing: border-box;
+  }
+  .spaces .room .roomimage img{
+    width: 100%;
+  }
+  .spaces .room .roomInfo{
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+/* @media screen and (max-width: 912px) {
+  .spaces{
+    margin-top: 5rem;
+  }
+  .spaces .room{
+    width: 100%;
+  }
+  .spaces .room .roomimage{
+    width: 45%;
+    display: inline-block;
+  }
+  .spaces .room .roomimage img{
+    width: 27rem;
+  }
+  .spaces .room .roomInfo{
+    width: 55%;
+  }
+  .spaces .room .roomInfo{}
+} */
+@media (min-width: 600px) and (max-width: 900px) {
+  .spaces{
+    flex-direction: column;
+  }
+  .spaces .room{
+    width: 100%;
+    height: 40vh;
+  }
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+  body{
+    display: none;
+  }
+}
