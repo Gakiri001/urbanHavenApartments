@@ -6,10 +6,6 @@
 
 html {
   font-size: 62.5%;
-  /* 1rem = 10px */
-}
-body{
-  height: 5202255px;
 }
 
 html,
@@ -23,7 +19,7 @@ header{
   align-items: center;
   padding: 0.8rem;
   border: solid 2px red;
-  height: 6rem;
+  height: 7rem;
   flex-wrap: wrap;
   width: 100%;
   position: fixed;
@@ -340,7 +336,7 @@ header .header-right button:hover{
   border: 2px solid red;
   border-radius: 10px;
   padding: 0 2rem;
-  height: 50vh;
+  height: 55vh;
   width: 46%;
   display: flex;
   align-items: center;
@@ -551,6 +547,7 @@ header .header-right button:hover{
   justify-content: space-between;
   align-items: center;
   border-radius: 10px;
+  border: red solid 2px;
 }
 
 #registration .reminder{
@@ -648,3 +645,33 @@ header .header-right button:hover{
       margin-top: 20px;
   }
 }
+
+footer{
+  background-color: rgb(216, 214, 214);
+  padding: 1rem 2rem;
+  width: 100%;
+  border-radius: 10px;
+}
+footer ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer ul div li{
+  list-style: none;
+  margin-bottom: 1rem;
+}
+footer ul div li a{
+  text-decoration: none;
+  color: green;
+  font-size: 15px;
+}
+footer ul div li a .icon{
+  padding-right: 1rem;
+}
+
+footer h3{
+  text-align: center;
+}
+
+
