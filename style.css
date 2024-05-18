@@ -8,9 +8,6 @@ html {
   font-size: 62.5%;
   /* 1rem = 10px */
 }
-body{
-  height: 852025px;
-}
 
 html,
 body {
@@ -292,20 +289,20 @@ header .header-right button:hover{
 @media screen and (max-width: 37.5em) {
   .about{
     height: 90vh;
-    background-color: yellow;
+    margin-bottom: 10%;
   }
   .about .aboutTitle h3{
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .about .aboutTitle p{
-    font-size: 12px;
+    font-size: 10px;
     line-height: 2rem;
   }
 }
 @media (min-width: 600px) and (max-width: 900px) {
   .about{
-    height: 80vh;
-    background-color: aqua;
+    margin-bottom: 40%;
+    height: 60vh;
   }
   .about .aboutTitle h3{
     font-size: 35px;
@@ -318,6 +315,11 @@ header .header-right button:hover{
   .about .aboutImage img{
     height: 200px;
     object-fit: cover;
+  }
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+  .about{
+    margin-bottom: 20%;
   }
 }
 
@@ -347,7 +349,6 @@ header .header-right button:hover{
   width: 100%;
 }
 .spaces .room .roomimage h1{
-  text-align: center;
   font-size: 22px;
   font-weight: bold;
   text-transform: capitalize;
@@ -416,14 +417,35 @@ header .header-right button:hover{
   line-height: 1.2rem;
   margin-bottom: 1.2rem;
 }
-@media screen and (max-width: 599px) {
+@media screen and (min-width:320px) and (max-width: 399px) {
   .spaces{
     flex-direction: column;
-    margin-top: 20%;
   }
   .spaces .room{
     flex-direction: column;
-    height: 55vh;
+    height: 550px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .spaces .room .roomimage{
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+  }
+  .spaces .room .roomimage h1{
+    font-size: 15px;
+  }
+  .spaces .room .roomimage img{
+    width: 90%;
+  }
+}
+
+@media screen and (min-width:400px) and (max-width: 599px) {
+  .spaces{
+    flex-direction: column;
+  }
+  .spaces .room{
+    flex-direction: column;
+    height: 560px;
     width: 100%;
     box-sizing: border-box;
   }
@@ -439,38 +461,25 @@ header .header-right button:hover{
     box-sizing: border-box;
   }
 }
-/* @media screen and (max-width: 912px) {
-  .spaces{
-    margin-top: 5rem;
-  }
-  .spaces .room{
-    width: 100%;
-  }
-  .spaces .room .roomimage{
-    width: 45%;
-    display: inline-block;
-  }
-  .spaces .room .roomimage img{
-    width: 27rem;
-  }
-  .spaces .room .roomInfo{
-    width: 55%;
-  }
-  .spaces .room .roomInfo{}
-} */
 @media (min-width: 600px) and (max-width: 900px) {
   .spaces{
-    margin-top: 20%;
-    flex-direction: column;
     background-color: yellow;
+    flex-direction: column;
   }
   .spaces .room{
     width: 100%;
-    height: 50vh;
+    height: 320px;
   }
 }
 @media (min-width: 900px) and (max-width: 1199px) {
-  body{
-    display: none;
+  .spaces{
+    flex-direction: column;
+  }
+  .spaces .room{
+    width: 100%;
+    height: 40vh;
+  }
+  .spaces .room .roomimage img{
+    width: 100%;
   }
 }
