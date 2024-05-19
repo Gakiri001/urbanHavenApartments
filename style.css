@@ -288,13 +288,14 @@ header .header-right button:hover{
 @media screen and (max-width: 37.5em) {
   .about{
     height: 90vh;
-    margin-bottom: 10%;
+    margin-bottom: 16%;
   }
   .about .aboutTitle h3{
     font-size: 2rem;
   }
   .about .aboutTitle p{
-    font-size: 10px;
+    font-size: 12px;
+    font-style: normal;
     line-height: 2rem;
   }
 }
@@ -435,6 +436,14 @@ header .header-right button:hover{
   }
   .spaces .room .roomimage img{
     width: 90%;
+  }
+  #advice h1{
+    font-size: 30px;
+  }
+  #advice ul li{
+    font-size: 15px;
+    line-height: 1.4rem;
+    margin-bottom: 1.2rem;
   }
 }
 
