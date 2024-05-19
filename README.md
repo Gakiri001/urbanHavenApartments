@@ -12,6 +12,7 @@ This repository contains the source code for the Urban Haven Apartments landing 
 - [Contact Form](#contact-form)
 - [Deployment](#deployment)
 - [Technologies Used](#technologies-used)
+- [Picture of website](#tip-of-the-website)
 
 
 ## Available Spaces
@@ -63,3 +64,6 @@ The landing page is deployed on [github](https://github.com/Gakiri001/urbanHaven
 
 - **HTML5**: For structuring the content.
 - **CSS**: For styling the content and layout.
+
+## Tip of the website
+![Tip of the website](./assets/landing.png)
